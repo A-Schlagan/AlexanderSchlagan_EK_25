@@ -15,62 +15,97 @@
   <div class="relative z-10">
     <header class="text-center py-20 bg-black/50">
       <h2 class="text-orange-400 text-lg uppercase font-bold tracking-widest">Wir freuen uns auf deine Nachricht!</h2>
-      <h1 class="text-7xl font-thin mt-2 text-white">KONTAKT</h1>
+      <h1 class="text-7xl font-thin mt-2 text-white">UNDER WOUNDER</h1>
     </header>
 
     <nav class="bg-[#5c4033] text-white w-full">
       <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row md:justify-between md:items-center">
         <ul class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 mt-4 md:mt-0">
-          <li><a href="index.html" class="inline-block transform transition duration-300 hover:-translate-y-1">Home</a></li>
-          <li><a href="cafe.html" class="inline-block transform transition duration-300 hover:-translate-y-1">Café</a></li>
-          <li><a href="geschichte.html" class="inline-block transform transition duration-300 hover:-translate-y-1">Geschichte</a></li>
-          <li><a href="kontakt.html" class="inline-block transform transition duration-300 hover:-translate-y-1">Kontakt</a></li>
+          <li><a href="index.html" class="inline-block transform transition duration-300 hover:-translate-y-1">Home</a>
+          </li>
+          <li><a href="cafe.html" class="inline-block transform transition duration-300 hover:-translate-y-1">Café</a>
+          </li>
+          <li><a href="geschichte.html"
+              class="inline-block transform transition duration-300 hover:-translate-y-1">Geschichte</a></li>
+          <li><a href="kontakt.html"
+              class="inline-block transform transition duration-300 hover:-translate-y-1">Kontakt</a></li>
         </ul>
+
+        <div class="relative">
+          <button id="toggleLogin" class="inline-block transform transition duration-300 hover:-translate-y-1 p">
+            Mitarbeiter-Login
+          </button>
+
+          <div id="loginSectionWrapper"
+            class="absolute right-0 mt-2 w-80 overflow-hidden transition-all duration-500 max-h-0 bg-white text-black rounded shadow-lg z-50">
+            <div id="loginSection" class="p-1">
+              <form id="loginForm" class="grid grid-cols-3 gap-2">
+                <input type="text" id="username" placeholder="Benutzername" class="p-2 border rounded col-span-1"
+                  required />
+                <input type="password" id="password" placeholder="Passwort" class="p-2 border rounded col-span-1"
+                  required />
+                <button type="submit"
+                  class="bg-orange-400 hover:bg-orange-500 text-black font-semibold px-2 py-2 rounded transition col-span-1">
+                  Einloggen
+                </button>
+                <p id="loginError" class="text-red-500 text-sm hidden col-span-3">Benutzername oder Passwort falsch!</p>
+              </form>
+            </div>
+          </div>
+        </div>
+
       </div>
     </nav>
 
-    
+
+
     <section class="max-w-4xl mx-auto p-6 bg-amber-50 text-black mt-20 rounded-lg shadow-lg relative z-20">
-        <h2 class="text-2xl font-light mb-4 text-center">Gästebuch - wir schätzen Dein Feedback</h2>
-        <div id="feedbackList" class="space-y-4">
-            
-        </div>
-        <br><br>
-        <form id="feedbackForm" class="grid gap-4 mb-6">
+      <h2 class="text-2xl font-light mb-4 text-center">Gästebuch - wir schätzen Dein Feedback</h2>
+      <div id="feedbackList" class="space-y-4">
+
+      </div>
+      <br><br>
+      <form id="feedbackForm" class="grid gap-4 mb-6">
         <input type="text" id="name" placeholder="Dein Name" class="p-2 rounded border border-gray-300" required />
-        <textarea id="message" placeholder="Deine Rückmeldung" class="p-2 rounded border border-gray-300 h-36 resize-none" required></textarea>
-        <button type="submit" class="bg-orange-400 hover:bg-orange-500 text-black font-semibold px-4 py-2 rounded transition">
-            Posten
+        <textarea id="message" placeholder="Deine Rückmeldung"
+          class="p-2 rounded border border-gray-300 h-36 resize-none" required></textarea>
+        <button type="submit"
+          class="bg-orange-400 hover:bg-orange-500 text-black font-semibold px-4 py-2 rounded transition">
+          Posten
         </button>
       </form>
     </section>
 
     <h3 class="font-semibold uppercase text-xl px-8 md:px-20 mt-20">Impressum </h3>
     <section id="impressum" class="bg-black/80 text-m p-4 px-8 md:px-20">
-      
+
       <div class="grid grid-cols-4 gap-4">
-        <div>Under Wounder Kaffeehaus <br> Musterstraße 123, <br> 12345 Köln</div>    
-        <div>Tel.: 0123 / 456789<br>E-Mail: cafe@underwounder.de <br>Reservierungen für Gruppen an reservierungen@underwounder.de</div>
+        <div>Under Wounder Kaffeehaus <br> Musterstraße 123, <br> 12345 Köln</div>
+        <div>Tel.: 0123 / 456789<br>E-Mail: cafe@underwounder.de <br>Reservierungen für Gruppen an
+          reservierungen@underwounder.de</div>
         <div>USt-ID: DE123456789 <br>Amtsgericht Köln
-HRB 97528</div>
-            <div> Inhaber: Max Beispielmann <br> Vertretungsberechtigter Geschäftsführer:
-Tom V. Thomas <br> Rechtliche Hinweise – Angaben gemäß § 5 TMG </div>
-        
+          HRB 97528</div>
+        <div> Inhaber: Max Beispielmann <br> Vertretungsberechtigter Geschäftsführer:
+          Tom V. Thomas <br> Rechtliche Hinweise – Angaben gemäß § 5 TMG </div>
+
       </div>
     </section>
-    
+
+
+
+
     <footer class="bg-[#5c4033] text-white w-full">
-        <div class="p-4 text-right pr-20">
-            <p>&copy; 2025 Made with <span style="color:red;">&#10084;</span> by Alexander Schlagan</p>
-        </div>
+      <div class="p-4 text-right pr-20">
+        <p>&copy; 2025 Made with <span style="color:red;">&#10084;</span> by Alexander Schlagan</p>
+      </div>
     </footer>
   </div>
-  
+
   <script>
     const form = document.getElementById('feedbackForm');
     const list = document.getElementById('feedbackList');
-    
-    // Rückmeldungen laden
+
+
     window.addEventListener('DOMContentLoaded', () => {
       const saved = localStorage.getItem('feedbacks');
       if (saved) {
@@ -89,7 +124,6 @@ Tom V. Thomas <br> Rechtliche Hinweise – Angaben gemäß § 5 TMG </div>
       if (name && message) {
         addFeedbackToDOM(name, message);
 
-        // Speichern in localStorage
         const saved = localStorage.getItem('feedbacks');
         const feedbacks = saved ? JSON.parse(saved) : [];
         feedbacks.push({ name, message });
@@ -105,6 +139,43 @@ Tom V. Thomas <br> Rechtliche Hinweise – Angaben gemäß § 5 TMG </div>
       entry.innerHTML = `<p class="font-semibold">${name}</p><p class="text-gray-700">${message}</p>`;
       list.prepend(entry);
     }
+
+
+    const toggleButton = document.getElementById('toggleLogin');
+    const loginWrapper = document.getElementById('loginSectionWrapper');
+
+    let isOpen = false;
+
+    toggleButton.addEventListener('click', () => {
+      if (!isOpen) {
+        loginWrapper.classList.remove('max-h-0');
+        loginWrapper.classList.add('max-h-[500px]');
+      } else {
+        loginWrapper.classList.remove('max-h-[500px]');
+        loginWrapper.classList.add('max-h-0');
+      }
+      isOpen = !isOpen;
+    });
+
+    const loginForm = document.getElementById("loginForm");
+const loginError = document.getElementById("loginError");
+
+loginForm.addEventListener("submit", function (event) {
+  event.preventDefault(); // Verhindert Neuladen
+
+  const username = document.getElementById("username").value.trim();
+  const password = document.getElementById("password").value.trim();
+
+  if (username === "alex" && password === "123") {
+    // Login erfolgreich: Weiterleitung zur Dienstplan-Seite
+    window.location.href = "dienstplan.html";
+  } else {
+    // Falsche Eingabe: Fehlermeldung anzeigen
+    loginError.classList.remove("hidden");
+  }
+});
+
+
   </script>
 
 </body>
